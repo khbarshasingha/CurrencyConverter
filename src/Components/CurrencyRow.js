@@ -1,14 +1,13 @@
 import React from "react";
 import { Form, Col } from "react-bootstrap";
 
-export default function CurrencyRow(props) {
-  const {
-    currencyopt,
-    selectedCurrency,
-    onchangeCurrency,
-    amount,
-    onchangeAmount
-  } = props;
+export default function CurrencyRow({
+  currencyopt,
+  selectedCurrency,
+  onchangeCurrency,
+  amount,
+  onchangeAmount
+}) {
   return (
     <Form>
       <Col xs="auto">
