@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import CurrencyRow from "./CurrencyRow";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import "../cssfiles/homepage.css";
 const BASE_URL = "https://api.exchangeratesapi.io/latest";
 

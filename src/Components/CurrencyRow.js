@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, Col, Container } from "react-bootstrap";
+import { Form, Container } from "react-bootstrap";
 
 export default function CurrencyRow({
   currencyopt,
