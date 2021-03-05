@@ -13,6 +13,7 @@ export default function CurrencyRow({
       <Col xs="auto">
         <Form.Control
           value={amount}
+          type="number"
           onChange={onchangeAmount}
           className="mb-2"
           id="inlineFormInput"
