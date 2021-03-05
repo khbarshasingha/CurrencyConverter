@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import CurrencyRow from "./CurrencyRow";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
+import "../cssfiles/homepage.css";
 const BASE_URL = "https://api.exchangeratesapi.io/latest";
 
 export const HomePage = () => {
@@ -50,24 +51,27 @@ export const HomePage = () => {
   };
   return (
     <Container>
-      <h1> Convert</h1>
-      <Row>
+      <h1> Convert</h1>{" "}
+      <Row className="currency-form">
         {" "}
-        <CurrencyRow
-          selectedCurrency={fromCurrency}
-          currencyopt={currencyopt}
-          onchangeCurrency={e => setFromCurrency(e.target.value)}
-          onchangeAmount={handlefromAmountChange}
-          amount={fromAmount}
-        />
-        <Col xs="auto">=</Col>
-        <CurrencyRow
-          selectedCurrency={toCurrency}
-          currencyopt={currencyopt}
-          onchangeCurrency={e => setToCurrency(e.target.value)}
-          onchangeAmount={handleToAmountChange}
-          amount={toAmount}
-        />
+        <Col sm={12} md={6} lg={6} xl={6}>
+          <CurrencyRow
+            selectedCurrency={fromCurrency}
+            currencyopt={currencyopt}
+            onchangeCurrency={e => setFromCurrency(e.target.value)}
+            onchangeAmount={handlefromAmountChange}
+            amount={fromAmount}
+          />
+        </Col>
+        <Col sm={12} md={6} lg={6} xl={6}>
+          <CurrencyRow
+            selectedCurrency={toCurrency}
+            currencyopt={currencyopt}
+            onchangeCurrency={e => setToCurrency(e.target.value)}
+            onchangeAmount={handleToAmountChange}
+            amount={toAmount}
+          />
+        </Col>
       </Row>
     </Container>
   );

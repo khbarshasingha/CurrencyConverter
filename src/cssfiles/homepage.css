@@ -1,0 +1,9 @@
+.currency-form {
+  margin-top: 10rem;
+  border: 1px solid rgb(106, 195, 236);
+  color: white;
+  font-family: "Akaya Telivigala", cursive;
+  border-radius: 25px;
+  background-color: rgba(201, 76, 76, 0.3);
+  padding: 50px;
+}

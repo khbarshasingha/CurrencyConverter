@@ -14,7 +14,7 @@ export const Header = () => {
     >
       <LinkContainer to="/">
         <Navbar.Brand>
-          <i class="fas fa-coins"></i>
+          <i className="fas fa-coins"></i>
         </Navbar.Brand>
       </LinkContainer>
 

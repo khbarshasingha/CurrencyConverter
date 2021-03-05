@@ -1,0 +1,16 @@
+.outer-form {
+  margin-top: 10rem;
+  border: 1px solid rgb(106, 195, 236);
+  color: white;
+  font-family: "Akaya Telivigala", cursive;
+  border-radius: 25px;
+  background-color: rgba(201, 76, 76, 0.3);
+}
+.col2 {
+  padding: 5rem;
+  align-items: center;
+  text-align: center;
+  color: rgb(238, 233, 227);
+  font-size: 1.5rem;
+  font-family: "cursive";
+}

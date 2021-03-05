@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, Col } from "react-bootstrap";
+import { Form, Col, Container } from "react-bootstrap";
 
 export default function CurrencyRow({
   currencyopt,
@@ -9,8 +9,8 @@ export default function CurrencyRow({
   onchangeAmount
 }) {
   return (
-    <Form>
-      <Col xs="auto">
+    <Container>
+      <Form>
         <Form.Control
           value={amount}
           type="number"
@@ -30,7 +30,7 @@ export default function CurrencyRow({
             </option>
           ))}
         </Form.Control>
-      </Col>
-    </Form>
+      </Form>
+    </Container>
   );
 }
