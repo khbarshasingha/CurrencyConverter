@@ -51,7 +51,6 @@ export const HomePage = () => {
   };
   return (
     <Container>
-      <h1> Convert</h1>{" "}
       <Row className="currency-form">
         {" "}
         <Col sm={12} md={6} lg={6} xl={6}>
