@@ -1,18 +1,22 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import { Form, Button, Container, Col } from "react-bootstrap";
 import "../cssfiles/login.css";
-export const Login = () => {
+import auth from "./auth";
+const Login = () => {
   const [logindata, setlogindata] = useState({
     email: "",
     pwd: ""
   });
-
+  let history = useHistory();
   const handleSubmit = event => {
     if (
       logindata.email === window.localStorage.getItem("email") &&
       logindata.pwd === window.localStorage.getItem("pwd")
     ) {
-      alert("view episode or characters");
+      auth.login(() => {
+        history.push("/");
+      });
     } else {
       alert("wrong credentials");
     }
@@ -59,3 +63,4 @@ export const Login = () => {
     </Container>
   );
 };
+export default Login;
